@@ -1,10 +1,10 @@
 connection:
-  indexserver_hostname: hostname
-  indexserver_port: 30015
-  container_group_admin: USER
-  password: PLAIN_PASSWORD
-  encrypt: False
-  sslValidateCertificate: False
+  indexserver_hostname: hostname  # The indexserver hostname
+  indexserver_port: 30015         # The indexserver SQL port
+  container_group_admin: USER     # The user with Container Group Administrator
+  password: PLAIN_PASSWORD        # The password
+  encrypt: False                  # Keep False by default for not SSL-enforced connections
+  sslValidateCertificate: False   # Keep False by default
 
 client_config:
   output_dir: ./output

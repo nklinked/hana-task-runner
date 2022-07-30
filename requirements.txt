@@ -1,0 +1,6 @@
+argparse
+pandas
+pathlib
+pyyaml
+hdbcli
+tabulate
