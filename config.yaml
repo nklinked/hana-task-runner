@@ -1,0 +1,19 @@
+connection:
+  indexserver_hostname: hostname
+  indexserver_port: 30015
+  container_group_admin: USER
+  password: PLAIN_PASSWORD
+  encrypt: False
+  sslValidateCertificate: False
+
+client_config:
+  output_dir: ./output
+  logging_level: INFO # CRITICAL | ERROR | WARNING | INFO | DEBUG | NOTSET
+
+processing:
+  max_concurrency: 3 # The allowed number of parallel operations
+
+operations:
+  _SYS_DI#SYS_XS_HANA_BROKER: # The container group name
+    delete:                   # The operation to be performed, supported options: delete
+      - NAMED_CONTAINER       # The container name
